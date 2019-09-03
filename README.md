@@ -71,14 +71,15 @@ $ flask run
 
 ## Build the Wheel <a name="build"></a>
 
-First you'll need to build the Python wheel distribution file:
+Prior to erecting the project with Docker, you'll need to build the Python
+wheel distribution file:
 
 ```sh
 $ python setup.py bdist_wheel
 ```
 
 Running that command should create a distribution file under a folder called
-`dist/`. An example wheel file might look like
+`dist/` (also not committed). An example wheel file might look like
 `dist/flaskr-1.0.0-py3-none-any.whl`.
 
 Docker will copy the wheel file into the image at build time.
